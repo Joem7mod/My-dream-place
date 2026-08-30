@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your dream vacation with My Dream Place. Expert travel advice, best destinations, and exclusive hotel deals worldwide.">
+    <meta name="keywords" content="travel, tourism, vacation, hotels, destinations, booking">
+    <meta name="author" content="My Dream Place">
+    <meta name="theme-color" content="#1576D6">
+    <title>My Dream Place - Travel & Tourism | Book Your Dream Vacation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Header Navigation -->
+    <header class="navbar" role="banner">
+        <div class="logo">
+            <i class="fa-solid fa-plane" aria-hidden="true"></i>
+            <a href="index.html"><span>my dream place</span></a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks" role="navigation">
+            <a href="index.html">Home</a>
+            <a href="#destinations">Discover</a>
+            <a href="#hotels">Hotels</a>
+            <a href="#activities">Why Us</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="action-buttons">
+            <button class="btn-secondary" id="signInBtn" aria-label="Sign in to your account">Sign In</button>
+            <button class="btn-primary" id="registerBtn" aria-label="Register for a new account">Register</button>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Enjoy Your Dream Vacation</h1>
+        <p>Plan and book our perfect trip with expert advice, travel tips, destination information and inspiration from us</p>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-form">
+            <div class="form-group">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Where are you going?">
+            </div>
+
+            <div class="form-group">
+                <i class="fa-regular fa-calendar"></i>
+                <input type="date" placeholder="Check in date">
+            </div>
+
+            <div class="form-group">
+                <i class="fa-regular fa-calendar"></i>
+                <input type="date" placeholder="Check out date">
+            </div>
+
+            <div class="form-group">
+                <i class="fa-regular fa-address-book"></i>
+                <input type="text" placeholder="Guests">
+            </div>
+
+            <button class="btn-primary">Search</button>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-counter-section">
+        <div class="stat-box">
+            <span class="stat-number" data-target="150">0</span><span>+</span>
+            <p>Destinations</p>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number" data-target="45">0</span><span>k+</span>
+            <p>Happy Travelers</p>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number" data-target="1200">0</span><span>+</span>
+            <p>Luxury Hotels</p>
+        </div>
+        <div class="stat-box">
+            <span class="stat-number" data-target="99">0</span><span>%</span>
+            <p>Positive Reviews</p>
+        </div>
+    </section>
+
+    <!-- Alert Section -->
+    <section class="alert-section">
+        <i class="fa-solid fa-gift"></i>
+        <p>Special Summer Deal: Get up to 30% off on all international bookings this week!</p>
+        <a href="#destinations">Explore Deals</a>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features-section" id="activities">
+        <h2>Why choose us</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <i class="fa-regular fa-credit-card"></i>
+                <h3>Ultimate flexibility</h3>
+                <p>You're in control, with free cancellation and payment options to satisfy any plan or budget.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-regular fa-umbrella"></i>
+                <h3>Memorable experiences</h3>
+                <p>Browse and book tours and activities so incredible, you'll want to tell your friends.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-regular fa-gem"></i>
+                <h3>Quality at our core</h3>
+                <p>High-quality standards. Millions of reviews. A trusted travel company.</p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-medal"></i>
+                <h3>Award-winning support</h3>
+                <p>New price? New plan? No problem. We're here to help, 24/7.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations-section" id="destinations">
+        <h2>Enjoy your dream vacation</h2>
+        <p>Plan and book our perfect trip with expert advice, travel tips, destination information and inspiration from us</p>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <div class="card-media">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, event)" aria-label="Save to favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <img src="./assets/img1.jpg" alt="Australia" loading="lazy">
+                </div>
+                <h3>Australia</h3>
+                <p>2246 properties</p>
+            </div>
+
+            <div class="destination-card">
+                <div class="card-media">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, event)" aria-label="Save to favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <img src="./assets/img2.jpg" alt="Japan" loading="lazy">
+                </div>
+                <h3>Japan</h3>
+                <p>1278 properties</p>
+            </div>
+
+            <div class="destination-card">
+                <div class="card-media">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, event)" aria-label="Save to favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <img src="./assets/img3.jpg" alt="New Zealand" loading="lazy">
+                </div>
+                <h3>New Zealand</h3>
+                <p>480 properties</p>
+            </div>
+
+            <div class="destination-card">
+                <div class="card-media">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, event)" aria-label="Save to favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <img src="./assets/img4.jpg" alt="Greece" loading="lazy">
+                </div>
+                <h3>Greece</h3>
+                <p>320 properties</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Hotels Section with Filter -->
+    <section class="hotels-section" id="hotels">
+        <h2>Popular stays & resorts</h2>
+        
+        <div class="category-tabs">
+            <button class="tab-btn active" onclick="filterHotels('all', this)">All Stays</button>
+            <button class="tab-btn" onclick="filterHotels('luxury', this)">Luxury Resorts</button>
+            <button class="tab-btn" onclick="filterHotels('beach', this)">Beachfront</button>
+            <button class="tab-btn" onclick="filterHotels('villa', this)">Private Villas</button>
+        </div>
+
+        <div class="hotel-grid">
+            <div class="hotel-card" data-category="luxury">
+                <div class="card-media">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, event)" aria-label="Save to favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <img src="./assets/img8.jpg" alt="Lakeside Motel Waterfront" loading="lazy">
+                </div>
+                <div class="card-rating"><i class="fa-solid fa-star"></i> 4.9 (128 reviews)</div>
+                <h3>Lakeside Motel Waterfront</h3>
+                <p class="hotel-price"><strong>$180</strong> / night</p>
+            </div>
+
+            <div class="hotel-card" data-category="luxury">
+                <div class="card-media">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, event)" aria-label="Save to favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <img src="./assets/img9.jpg" alt="Recce Graham Resort" loading="lazy">
+                </div>
+                <div class="card-rating"><i class="fa-solid fa-star"></i> 4.8 (95 reviews)</div>
+                <h3>Recce Graham Resort</h3>
+                <p class="hotel-price"><strong>$240</strong> / night</p>
+            </div>
+
+            <div class="hotel-card" data-category="beach">
+                <div class="card-media">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, event)" aria-label="Save to favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <img src="./assets/img10.jpg" alt="Fireside Dinners" loading="lazy">
+                </div>
+                <div class="card-rating"><i class="fa-solid fa-star"></i> 4.7 (82 reviews)</div>
+                <h3>Fireside Beach Resort</h3>
+                <p class="hotel-price"><strong>$150</strong> / night</p>
+            </div>
+
+            <div class="hotel-card" data-category="villa">
+                <div class="card-media">
+                    <button class="wishlist-btn" onclick="toggleWishlist(this, event)" aria-label="Save to favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <img src="./assets/img111.jpg" alt="Oculous Inn Stay" loading="lazy">
+                </div>
+                <div class="card-rating"><i class="fa-solid fa-star"></i> 5.0 (210 reviews)</div>
+                <h3>Oculous Private Villa</h3>
+                <p class="hotel-price"><strong>$320</strong> / night</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiration Section -->
+    <section class="inspiration-section">
+        <h2>Get inspiration for your next trip</h2>
+        <div class="inspiration-grid">
+            <article class="inspiration-card">
+                <h3>Sydney's 10 most fashionable 5 star hotels</h3>
+                <p>Browse the fastest growing tourism sector in the heart of Australia tourism capital...</p>
+            </article>
+
+            <article class="inspiration-card">
+                <h3>Enjoy your vacation in best hotels of United Kingdom</h3>
+                <p>Top sites where you do not have to worry about being a vegan. Our tourist guide is here...</p>
+            </article>
+
+            <article class="inspiration-card">
+                <h3>World's top destinations for nature and calm retreats</h3>
+                <p>Discover pristine beaches, serene mountains, and picturesque valleys for your next retreat...</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h2>What our customers say</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars" aria-label="5 out of 5 stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Amazing experience! Booked our dream vacation in just minutes. Highly recommended!"</p>
+                <h4>Sarah Johnson</h4>
+                <span class="destination-tag">Australia</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars" aria-label="5 out of 5 stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"The best travel platform I've used. Great deals and excellent customer support!"</p>
+                <h4>Michael Chen</h4>
+                <span class="destination-tag">Japan</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars" aria-label="5 out of 5 stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p>"Perfect trip to Greece! Everything was organized perfectly. Will definitely book again."</p>
+                <h4>Emma Williams</h4>
+                <span class="destination-tag">Greece</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <details class="faq-item">
+                <summary>
+                    <i class="fas fa-chevron-down"></i>
+                    How do I book a trip?
+                </summary>
+                <p>Simply fill out our search form with your destination, check-in and check-out dates, and number of guests. Browse through available options and book your preferred choice.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <i class="fas fa-chevron-down"></i>
+                    Can I cancel my booking?
+                </summary>
+                <p>Yes! We offer free cancellation on most bookings. You can cancel up to 48 hours before your check-in date for a full refund.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <i class="fas fa-chevron-down"></i>
+                    Is my payment secure?
+                </summary>
+                <p>Absolutely! We use industry-leading SSL encryption to protect your payment information. Your data is completely safe with us.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <i class="fas fa-chevron-down"></i>
+                    How do I contact customer support?
+                </summary>
+                <p>You can reach our 24/7 customer support team via live chat, email, or phone. We're here to help anytime!</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the best travel deals and inspiration delivered to your inbox!</p>
+        <form class="newsletter-form" id="newsletterForm" aria-label="Newsletter subscription form">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn-primary" aria-label="Subscribe to newsletter">Subscribe</button>
+        </form>
+        <p class="newsletter-note">We never spam. Unsubscribe anytime.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-section" id="about">
+                <h4>About Us</h4>
+                <p>My Dream Place is your trusted partner in creating unforgettable travel experiences worldwide.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Discover</a></li>
+                    <li><a href="#hotels">Hotels</a></li>
+                    <li><a href="#activities">Why Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety Tips</a></li>
+                    <li><a href="#">Booking Guide</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> support@mydreamplace.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, World City, 12345</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 My Dream Place. All rights reserved. | Developed with care by <strong>Youssef Mahmoud</strong></p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h3 id="modalTitle">Sign In</h3>
+            <p class="modal-subtitle">Access your saved trips and exclusive discounts</p>
+            
+            <form id="authForm" onsubmit="handleAuthSubmit(event)">
+                <div class="form-group" style="margin-bottom: 12px;">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email address" required>
+                </div>
+                <div class="form-group" style="margin-bottom: 18px;">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Continue</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+</body>
+</html>
